@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  font-family: "Commissioner", sans-serif;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.header-container {
+  background-image: url("images/image-hero-desktop.jpg");
+  height: 300px;
+  background-size: cover;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.navbar-links li {
+  list-style: none;
+}
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+}
+.navbar-links li a:hover {
+  color: #e6e6e6;
+}
+.toggle-button {
+  position: absolute;
+  top: 40px;
+  right: 80px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 31px;
+  height: 21px;
+}
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+.navbar {
+  padding: 40px 80px;
+}
+.modal-bg {
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+}
+.menu-modal {
+  box-shadow: 0px 0px 0px 100vh rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 80px;
+  background-color: white;
+  width: 90vw;
+  border-radius: 10px;
+}
+.menu-modal div a {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.menu-modal div a:hover {
+  color: hsl(0, 0%, 48%);
+}
+.menu-modal div {
+  padding: 20px 20px;
+}
+
+.about {
+  padding-bottom: 0px;
+}
+hr {
+  background-color: #e6e6e6;
+  height: 1px;
+  border: none;
+  margin: 0px;
+}
+.visible {
+  visibility: visible;
+}
+@media (max-width: 768px) {
+  .header-container {
+    background: url("images/image-hero-mobile.jpg");
+    background-size: cover;
+  }
+  .navbar {
+    padding: 20px 40px;
+  }
+  .toggle-button {
+    display: flex;
+  }
+  .navbar-links {
+    display: none;
+  }
+  .toggle-button {
+    top: 20px;
+    right: 40px;
+  }
+}
